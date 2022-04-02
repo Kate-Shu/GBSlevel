@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="gbslevel">
+  <div class="g-level-container s-level-container">
+    <div class="registration-wrapper">
+      <div class="close-make-order">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.45">
+            <rect y="26.8701" width="38" height="1" transform="rotate(-45 0 26.8701)" fill="white" />
+            <rect width="38" height="1" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 27.5771 26.8701)"
+              fill="white" />
+          </g>
+        </svg>
+      </div>
+      <div class="address">UAE, AJMAN ONE, Tower 11</div>
+      <!-- <div class="g-logo logoS"> -->
+      <!-- <img src="img/S-logo-page3.svg" alt=""> -->
+      <!-- </div> -->
+      <div class="text-1">CALL US</div>
+      <div class="phone">
+        <a href="tel:+971563384329">+971563384329</a>
+      </div>
+      <div class="text-1">
+        input your phone number and we will call you
+      </div>
+      <form action="#" class="form">
+        <div class="input-wrapper">
+          <input class="input" type="text" autocomplete="off" placeholder=" " id="name" name="name" required>
+          <label for="name" class="label">Name</label>
+          <div class="error-message">
+            Data is not valid.
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <input class="input" autocomplete="off" placeholder=" " id="phone" name="phone" required>
+          <label class="label" for="phone">Phone number</label>
+          <div class="error-message">
+            Phone is not valid.
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <input class="input" autocomplete="off" id="email" name="email" placeholder="youremail@mail.com"
+            pattern=".+@[a-z]+\.[a-z]+">
+          <label class="label" for="email">Email</label>
+          <div class="error-message">
+            Email is not valid.
+          </div>
+        </div>
+        <button class="btn btn-apply" type="submit">
+          <span>Apply</span>
+        </button>
+
+      </form>
+    </div>
+  </div>
+  <div class="modal-overlay">
+    <div class="modal">
+      <div class="modal-title">
+        Thank you
+      </div>
+      <div class="modal-description">
+        for your application!
+      </div>
+      <button class="btn btn-modal">
+        <span>
+          return home
+        </span>
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
