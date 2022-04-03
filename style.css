@@ -1,10 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700,800);
 
-body {
+body,
+html {
   margin: 0;
+  padding: 0;
   height: 100%;
   font-family: 'Raleway';
   font-size: 18px;
+  overflow: hidden;
 }
 
 * {
@@ -14,8 +17,8 @@ body {
 /*slider */
 
 .slider-container {
-  min-height: 100vh;
-  overflow: auto;
+  max-height: 100vh;
+  overflow: hidden;
   background: #000;
 }
 
@@ -28,6 +31,7 @@ body {
   margin-left: -200px;
   /* margin-left: calc(7vw - 40vh); */
   background: black;
+  overflow: hidden;
 }
 
 .slide-one,
