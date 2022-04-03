@@ -187,12 +187,9 @@ if (isMobile.any()) {
         textlevelImg.setAttribute('src', 'img/s-level-title.svg'));
       console.log('is not open');
     }
-
-
-
   }));
 
-} else {
+} else if (!isMobile.any()) {
   document.body.classList.add('_pc');
   console.log('is pc');
 

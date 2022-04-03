@@ -231,10 +231,10 @@ html {
 
 .g-level-container {
   height: 100%;
-  width: 100%;
-  max-height: 100vh;
-  min-height: 100vh;
-  overflow: auto;
+  /* width: 100%; */
+  /* max-height: 100vh; */
+  /* min-height: 100vh; */
+  overflow: hidden;
   /* background-color: #000; */
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/photo21.jpg) no-repeat center;
   background-size: cover;
@@ -633,6 +633,12 @@ html {
     padding-top: 5vh;
   }
 
+  .g-level-container,
+  .b-level-container,
+  .s-level-container {
+    overflow: auto;
+  }
+
   .phone {
     font-size: 30px;
   }
@@ -705,7 +711,7 @@ html {
   }
 }
 
-/*  */
+/* */
 @media screen and (max-width: 767px) and (min-height: 500px) {
   .slider-wrapper {
     margin-left: -180px;
