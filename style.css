@@ -492,26 +492,30 @@ html {
   height: 100vh;
   position: absolute;
   top: 0;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  /*display: flex;
+  */
+  /*justify-content: center;
+  */
+  /*align-items: center;
+  */
   overflow: auto;
-  transition: backdrop-filter .5s ease-in-out background-color .5s;
-  -webkit-transition: backdrop-filter .5s ease-in-out background-color .5s;
-  -moz-transition: backdrop-filter .5s ease-in-out background-color .5s;
-  -ms-transition: backdrop-filter .5s ease-in-out background-color .5s;
-  -o-transition: backdrop-filter .5s ease-in-out background-color .5s;
+  transition: backdrop-filter .5s ease-in-out, background-color .5s ease-in-out;
+  -webkit-transition: backdrop-filter .5s ease-in-out, background-color .5s ease-in-out;
+  -moz-transition: backdrop-filter .5s ease-in-out, background-color .5s ease-in-out;
+  -ms-transition: backdrop-filter .5s ease-in-out, background-color .5s ease-in-out;
+  -o-transition: backdrop-filter .5s ease-in-out, background-color .5s ease-in-out;
 }
 
 .modal-overlay.is-open {
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   visibility: visible;
   opacity: 1;
   top: 0;
-  height: 100vh !important;
-  height: 100% !important;
-  overflow: auto;
+  /* height: 100vh !important; */
+  height: 100%;
+  overflow: hidden;
 }
 
 .modal {
