@@ -219,8 +219,11 @@ html {
 .g-level-container {
   /* height: 100%; */
   max-height: 100vh;
+  -webkit-max-height: 100vh;
   min-height: 100vh;
+  -webkit-min-height: 100vh;
   overflow: hidden;
+  -webkit-overflow: hidden;
   /* background-color: #000; */
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/photo21.jpg) no-repeat center;
   background-size: cover;
@@ -253,6 +256,7 @@ html {
 .registration-wrapper {
   /* max-height: 100%; */
   max-height: 100vh;
+  -webkit-max-height: 100vh;
   width: 90%;
   color: #ffffff;
   display: flex;
@@ -260,6 +264,8 @@ html {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  -webkit-overflow: hidden;
+
 }
 
 .close-make-order {
@@ -479,13 +485,8 @@ html {
   height: 100vh;
   position: absolute;
   top: 0;
-  /*display: flex;
-  */
-  /*justify-content: center;
-  */
-  /*align-items: center;
-  */
-  overflow: auto;
+  overflow: hidden;
+  -webkit-overflow: hidden;
   transition: backdrop-filter .5s ease-in-out, background-color .5s ease-in-out;
   -webkit-transition: backdrop-filter .5s ease-in-out, background-color .5s ease-in-out;
   -moz-transition: backdrop-filter .5s ease-in-out, background-color .5s ease-in-out;
@@ -499,10 +500,10 @@ html {
   -webkit-backdrop-filter: blur(20px);
   visibility: visible;
   opacity: 1;
-  top: 0;
-  /* height: 100vh !important; */
-  height: 100%;
+  /* top: 0; */
+  /* height: 100%; */
   overflow: hidden;
+  -webkit-overflow: hidden;
 }
 
 .modal {
@@ -512,8 +513,6 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  /*left: center;
-  */
   background-color: #ffffff;
   box-sizing: border-box;
   opacity: 0;
@@ -532,6 +531,8 @@ html {
   -moz-transform: translate(-50%, -50%) scale(1);
   -ms-transform: translate(-50%, -50%) scale(1);
   -o-transform: translate(-50%, -50%) scale(1);
+  overflow: hidden;
+  -webkit-overflow: hidden;
 }
 
 .modal.is-visible {
@@ -540,6 +541,8 @@ html {
   z-index: 2;
   filter: unset;
   -webkit-filter: unset;
+  overflow: hidden;
+  -webkit-overflow: hidden;
 }
 
 .modal-title {

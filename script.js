@@ -44,7 +44,6 @@ const validData = {
       })
       name.addEventListener('focus', () => {
         errMessageName.style.opacity = '0';
-        console.log('focus');
       })
     };
     if (phone) {
@@ -58,7 +57,6 @@ const validData = {
       })
       phone.addEventListener('focus', () => {
         errMessagePhone.style.opacity = '0';
-        console.log('focus');
       })
     };
 
@@ -76,17 +74,14 @@ const validData = {
     if (email) {
       email.addEventListener('focusout', () => {
         if (!email.value.includes('@')) {
-          console.log('error');
           errMessageEmail.style.opacity = '1';
         } else {
           errMessageEmail.style.opacity = '0';
-          console.log(' no error');
         }
 
       })
       email.addEventListener('focus', () => {
         errMessageEmail.style.opacity = '0';
-        console.log('focus');
       })
     }
 
@@ -185,7 +180,6 @@ if (isMobile.any()) {
 
       slide.querySelectorAll('.text-slevel-img').forEach(textlevelImg =>
         textlevelImg.setAttribute('src', 'img/s-level-title.svg'));
-      console.log('is not open');
     }
   }));
 
