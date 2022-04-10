@@ -498,6 +498,9 @@ html {
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  -moz-backdrop-filter: blur(20px);
+  -ms-backdrop-filter: blur(20px);
+  -o-backdrop-filter: blur(20px);
   visibility: visible;
   opacity: 1;
   /* top: 0; */
